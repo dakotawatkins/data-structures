@@ -10,7 +10,7 @@
  * ['acre', 'race']].
  */
 
-function anagramGroups(words) {
+ function anagramGroups(words) {
   // const words = ["lemon", "melon", "ape", "pea", "are", "ear", "bear", "bare"];
   console.log("words:", words);
 

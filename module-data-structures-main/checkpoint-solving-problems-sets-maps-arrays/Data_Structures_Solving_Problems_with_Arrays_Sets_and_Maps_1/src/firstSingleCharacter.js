@@ -32,4 +32,6 @@ function firstSingleCharacter(word) {
   return firstSingleLetter;
 }
 
+firstSingleCharacter("bob")
+
 module.exports = firstSingleCharacter;
