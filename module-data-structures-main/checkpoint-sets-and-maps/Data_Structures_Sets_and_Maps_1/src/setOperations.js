@@ -1,14 +1,12 @@
+
+let s1 = new Set([1, 2, 3, 4, 5, 6]);
+let s2 = new Set([5, 2, 8, 4, 10]);
+
 /**
  * return the union of two sets
  */
 function union(s1, s2) {
-  /**
-   * setting parameter values and an expected result
-   * to check work as i go
-   */
-  let s1 = new Set([1, 2, 3, 4, 5, 6]);
-  let s2 = new Set([5, 7, 8, 9, 10]);
-
+  
   /** this isn't necessary, but i also converted
    * each set into an array and logged it out for
    * a cleaner look
@@ -38,17 +36,10 @@ function union(s1, s2) {
  */
 
 function intersect(s1, s2) {
-  let s1 = new Set([1, 2, 3, 4, 5, 6]);
-  let s2 = new Set([5, 2, 8, 4, 10]);
-
+    
   let s1Array = [...s1];
   let s2Array = [...s2];
-  let expectedIntersection = [2, 5, 4];
-
-  console.log(`set 1: ${s1Array}`);
-  console.log(`set 2: ${s2Array}`);
-  console.log(`expected intersection of sets: ${expectedIntersection}`);
-
+  
   let intersection = new Set();
 
   s1.forEach((s) => {
@@ -63,9 +54,8 @@ function intersect(s1, s2) {
 /**
  * return the difference of two sets
  */
+
 function difference(s1, s2) {
-  let s1 = new Set([1, 2, 3, 4, 5, 6]);
-  let s2 = new Set([5, 2, 8, 4, 10]);
   let expectedDifference = [1, 3, 6];
 
   console.log(`set 1: ${[...s1]}`);
